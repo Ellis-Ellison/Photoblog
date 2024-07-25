@@ -1,8 +1,55 @@
 :root {
     --font-family: "Playfair Display", sans-serif;
     --second-font-family: "Ubuntu", sans-serif;
-    --select-link-color: #03A9F4;
+    --select-or-hover-link-color: #03A9F4;
     --navigations-color: #7D7D7D;
     --gener-color: #B4AD9E;
-    --text-color: #626262;
+    --text-and-btn-border-color: #626262;
+    --bg-color: #ffffff;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.header-link {
+    color: var(--navigations-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-link.current {
+    color: var(--select-or-hover-link-color);
+}
+
+.galary-type {
+    font-family: var(--second-font-family);
+    font-weight: 300;
+}
+
+.galary-type {
+    color: var(--gener-color);
+}
+
+.galary-title,
+.galary-bio,
+.galary-button {
+    color: var(--text-and-btn-border-color);
+}
+
+.galary-title {
+    font-size: 30px;
+}
+
+.galary-bio {
+    font-size: 14px;
+}
+
+.galary-button {
+    background-color: var(--bg-color);
+    width: 165px;
+    height: 60px;
 }
